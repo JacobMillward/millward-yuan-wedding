@@ -1,3 +1,4 @@
+import Image, { StaticImageData } from "next/image";
 import React from "react";
 
 export enum SectionBackground {
@@ -7,17 +8,26 @@ export enum SectionBackground {
 
 type Props = {
   background?: SectionBackground;
+  image?: string;
+  children: React.ReactNode;
   [x: string]: any;
 };
 
 export const PageSection: React.FC<Props> = ({
   children,
   background = SectionBackground.White,
+  image,
   ...props
 }) => {
   return (
-    <section className={`flex h-screen ${background}`} {...props}>
-      {children}
+    <section
+      className={`h-screen w-full ${background} bg-cover bg-center`}
+      style={{
+        backgroundImage: image && `url(${image})`,
+      }}
+      {...props}
+    >
+      <div className="flex flex-col h-full w-full">{children}</div>
     </section>
   );
 };

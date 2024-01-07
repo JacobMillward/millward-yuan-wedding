@@ -22,7 +22,7 @@ const Navbar: React.FC<NavbarProps> = ({ navLinks }) => {
           <Link
             key={link.target}
             href={link.target}
-            className="ml-4 text-white hover:text-gray-300"
+            className="ml-4 text-white hover:text-gray-300 transition-colors ease-out duration-300"
           >
             {link.title}
           </Link>

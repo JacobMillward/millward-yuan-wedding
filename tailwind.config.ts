@@ -11,6 +11,9 @@ const config: Config = {
       colors: {
         burgundy: "#691126",
       },
+      fontFamily: {
+        serif: ["var(--font-satsify)"],
+      },
     },
   },
   plugins: [],

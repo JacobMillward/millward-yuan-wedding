@@ -3,7 +3,7 @@ import { PageSection, SectionBackground } from "./page-section";
 
 export const RsvpSection = () => {
   return (
-    <PageSection id="rsvp" background={SectionBackground.Blue}>
+    <PageSection id="rsvp" background={SectionBackground.Khaki}>
       <h1>RSVP</h1>
     </PageSection>
   );

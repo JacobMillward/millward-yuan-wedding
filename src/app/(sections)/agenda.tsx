@@ -114,16 +114,16 @@ const Agenda = ({ times }: { times: TimeSlot[] }) => {
 export const AgendaSection = () => {
   return (
     <PageSection
-      background={SectionBackground.Blue}
+      background={SectionBackground.Khaki}
       id="agenda"
       className="text-slate-900 items-center"
     >
       <h1 className="text-4xl font-bold mt-20">Agenda</h1>
-      <p className="mt-5 mx-20 text-lg">
+      <p className="mt-5 mx-20 text-lg lg:text-xl">
         We&apos;re currently still finalising the agenda for the day, but
         here&apos;s a rough idea of what to expect:
       </p>
-      <p className="mb-3 mx-20 text-lg">
+      <p className="mb-3 mx-20 text-lg lg:text-xl">
         With the ceremony starting at 12:30pm,{" "}
         <span className="font-extrabold">
           please arrive at the venue for no later than 12pm.

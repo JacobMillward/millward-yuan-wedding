@@ -10,6 +10,7 @@ const config: Config = {
     extend: {
       colors: {
         burgundy: "#691126",
+        khaki: "#c2a791",
       },
       fontFamily: {
         serif: ["var(--font-satsify)"],

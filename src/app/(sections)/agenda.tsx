@@ -69,7 +69,7 @@ const Agenda = ({ times }: { times: TimeSlot[] }) => {
       <ul className="relative list-none m-0 p-0 z-10 flex flex-col justify-between">
         {times.map((timeSlot, index) => (
           <li
-            key={timeSlot.time}
+            key={timeSlot.title}
             className="grid grid-cols-3 items-center justify-center peer peer-first:mt-16"
           >
             <div

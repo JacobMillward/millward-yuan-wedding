@@ -28,10 +28,12 @@ export const PageSection: React.FC<Props> = ({
       {image && (
         <Image
           src={image}
-          alt=""
-          layout="fill"
-          objectFit="cover"
+          alt="Background image"
           className="z-0"
+          fill={true}
+          style={{
+            objectFit: "cover",
+          }}
         />
       )}
       <div className={`z-10 flex flex-col w-full grow ${className}`}>

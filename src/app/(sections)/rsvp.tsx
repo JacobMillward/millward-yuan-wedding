@@ -7,7 +7,7 @@ export const RsvpSection = () => {
     <PageSection
       id="rsvp"
       background={SectionBackground.Khaki}
-      className="items-center text-center h-min-content"
+      className="items-center text-center h-min-content pb-10"
     >
       <h1 className="text-4xl font-bold mt-20">RSVP</h1>
       <p className="mt-5 mx-20 text-lg lg:text-xl">

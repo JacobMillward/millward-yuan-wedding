@@ -37,3 +37,5 @@ export const VenueMap: FC<{
     </MapContainer>
   );
 };
+
+export default VenueMap;

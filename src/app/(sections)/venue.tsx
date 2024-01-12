@@ -1,8 +1,11 @@
 import React from "react";
 import { NextSectionLink } from "./next-section-link";
 import { PageSection } from "./page-section";
-import { VenueMap } from "./map";
 import { Link } from "../link";
+
+import dynamic from "next/dynamic";
+
+export const LazyMap = dynamic(() => import("./map"), { ssr: false });
 
 export const VenueSection = () => {
   return (
@@ -39,7 +42,7 @@ export const VenueSection = () => {
               DL7 0JF
             </p>
 
-            <VenueMap />
+            <LazyMap />
           </div>
         </div>
         <div className="flex flex-col items-center text-center p-5">

@@ -8,7 +8,7 @@ type Props = {
 
 export const NextSectionLink: React.FC<Props> = ({ target, children }) => {
   return (
-    <div className="my-auto ml-auto bg-slate-900/50 py-4 pl-4 rounded-l-md sticky bottom-12 mb-12">
+    <div className="my-auto ml-auto bg-slate-900/50 py-4 pl-4 rounded-l-md sticky bottom-16 mb-16">
       <Link className="flex mr-4 items-center group" href={`#${target}`}>
         <div className="relative text-white font-bold transition-all ease-out duration-300">
           {children}

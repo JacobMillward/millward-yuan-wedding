@@ -63,10 +63,10 @@ const Agenda = ({ times }: { times: TimeSlot[] }) => {
   return (
     <div className="relative m-8">
       <div
-        className="border-r-8 border-burgundy absolute h-full top-0 z-0"
+        className="border-r-8 border-burgundy absolute h-full top-0"
         style={{ left: "calc(50% - 4px)" }}
       ></div>
-      <ul className="relative list-none m-0 p-0 z-10 flex flex-col justify-between">
+      <ul className="relative list-none m-0 p-0 flex flex-col justify-between">
         {times.map((timeSlot, index) => (
           <li
             key={timeSlot.title}

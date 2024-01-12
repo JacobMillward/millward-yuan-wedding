@@ -18,10 +18,10 @@ export const VenueSection = () => {
         occasion with all of you.
       </p>
 
-      <div className="flex flex-col lg:flex-row mx-auto lg:mt-20">
-        <div className="flex flex-col text-center border-burgundy border-b-2 lg:border-r-2 lg:border-b-0 p-5 mx-5">
+      <div className="flex flex-col lg:flex-row lg:mt-20 mx-10">
+        <div className="flex flex-col text-center border-burgundy border-b-2 lg:border-r-2 lg:border-b-0 p-5">
           <h2 className="text-2xl font-bold">How to find it</h2>
-          <p className="m-5 max-w-[900px] text-lg">
+          <p className="max-w-[900px] text-lg m-5">
             Pepper Arden Hall is about 20 minutes from Darlington, and 20
             minutes from Northallerton. There is plenty of parking available on
             site.
@@ -42,15 +42,15 @@ export const VenueSection = () => {
             <VenueMap />
           </div>
         </div>
-        <div className="flex flex-col items-center text-center ml-5 mt-5 lg:mt-0">
+        <div className="flex flex-col items-center text-center p-5">
           <h2 className="text-2xl font-bold">Where to stay</h2>
-          <p className="m-5 max-w-[900px] text-lg">
+          <p className="max-w-[900px] text-lg m-5">
             If you aren&apos;t already staying with us at the venue, there are
             plenty of hotels and B&Bs in the surrounding area. The following
             accommodation options are all nearby, at a range of price points:
           </p>
 
-          <ul className="list-disc list-inside text-xl my-auto">
+          <ul className="list-disc list-inside text-xl my-auto space-y-2">
             <li>
               <Link href="https://www.sykescottages.co.uk/cottage/North-York-Moors-Coast-Northallerton/The-Byre-924364.html#duration=2&calendar=2024-11&changeover=5">
                 <span className="font-bold">The Byre, East Cowton</span>{" "}

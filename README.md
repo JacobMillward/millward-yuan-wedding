@@ -1,4 +1,5 @@
 # Millward-Yuan Wedding Website
+[![Fly Deploy](https://github.com/JacobMillward/millward-yuan-wedding/actions/workflows/deploy.yml/badge.svg)](https://github.com/JacobMillward/millward-yuan-wedding/actions/workflows/deploy.yml)
 
 This is the repo for our [wedding website](https://wedding.millward-yuan.family), which will take place on 16th November 2024.
 

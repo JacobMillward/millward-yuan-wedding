@@ -18,7 +18,7 @@ const Navbar: React.FC<NavbarProps> = ({ navLinks }) => {
       </div>
 
       <div
-        className="flex ml-auto pl-5 sm:pl-0 sm:ml-0 justify-between w-full max-w-96"
+        className="flex ml-auto px-5 sm:px-0 sm:ml-0 justify-between w-full max-w-96"
         style={{
           fontFamily: "var(--font-satisfy)",
         }}

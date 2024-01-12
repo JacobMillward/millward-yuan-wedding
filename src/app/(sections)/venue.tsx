@@ -4,7 +4,7 @@ import { PageSection } from "./page-section";
 import { Link } from "../link";
 
 import dynamic from "next/dynamic";
-export const VenueMap = dynamic(() => import("./VenueMap"), { ssr: false });
+export const VenueMap = dynamic(() => import("./venue-map"), { ssr: false });
 
 export const VenueSection = () => {
   return (

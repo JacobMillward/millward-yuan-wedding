@@ -21,7 +21,7 @@ const LeafletMap: FC<{
 }> = ({ className, center, zoom = 1 }) => {
   return (
     <MapContainer
-      className={`h-[300px] w-[300px]  md:h-[400px] md:w-[400px] lg:h-[500px] lg:w-[500px] relative ${className}`}
+      className={`h-[300px] w-[300px]  md:h-[400px] md:w-[400px] lg:h-[500px] lg:w-[500px] relative drop-shadow-xl ${className}`}
       maxZoom={18}
       zoom={zoom}
       center={center}

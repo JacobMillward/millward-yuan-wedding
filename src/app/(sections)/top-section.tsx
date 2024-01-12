@@ -10,8 +10,10 @@ export const TopSection = () => {
           <h1 className="text-4xl font-bold">Jacob &amp; Jianan</h1>
           <h2 className="text-2xl font-bold">are getting married!</h2>
 
-          <p className="mt-3">Saturday, November 16th, 2024 · 12:30pm</p>
-          <p>Pepper Arden Hall, Northallerton</p>
+          <p className="mt-3 text-lg">
+            Saturday, November 16th, 2024 · 12:30pm
+          </p>
+          <p className="text-lg">Pepper Arden Hall, Northallerton</p>
         </div>
       </div>
 

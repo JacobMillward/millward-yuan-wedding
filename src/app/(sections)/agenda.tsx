@@ -65,14 +65,14 @@ const Agenda = ({ times }: { times: TimeSlot[] }) => {
   return (
     <div className="relative m-8">
       <div
-        className="border-r-8 border-burgundy absolute h-full top-0 drop-shadow-xl"
+        className="border-r-8 border-burgundy absolute h-full top-0"
         style={{ left: "calc(50% - 4px)" }}
       ></div>
       <ul className="relative list-none m-0 p-0 flex flex-col justify-between">
         {times.map((timeSlot, index) => (
           <li
             key={timeSlot.title}
-            className="grid grid-cols-3 items-center justify-center group peer peer-first:mt-16 drop-shadow-xl"
+            className="grid grid-cols-3 items-center justify-center group peer peer-first:mt-16"
           >
             <div
               className={`font-bold text-2xl sm:text-3xl text-slate-700 ${
@@ -84,7 +84,7 @@ const Agenda = ({ times }: { times: TimeSlot[] }) => {
 
             {timeSlot.icon ? (
               <div
-                className={`bg-burgundy rounded-full h-20 w-20 flex items-center group-hover:animate-wiggle justify-center mx-auto order-2`}
+                className={`bg-burgundy rounded-full h-20 w-20 flex items-center group-hover:animate-wiggle justify-center mx-auto order-2 drop-shadow-xl`}
               >
                 <Image
                   src={timeSlot.icon}

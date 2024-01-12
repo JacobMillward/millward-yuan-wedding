@@ -11,6 +11,7 @@ const config: Config = {
       colors: {
         burgundy: "#691126",
         khaki: "#c2a791",
+        caramel: "#f9b988",
       },
       fontFamily: {
         serif: ["var(--font-satsify)"],

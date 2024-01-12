@@ -1,6 +1,7 @@
 import React from "react";
 import { NextSectionLink } from "./next-section-link";
 import { PageSection } from "./page-section";
+import { VenueMap } from "./map";
 import Link from "next/link";
 
 export const VenueSection = () => {
@@ -32,27 +33,21 @@ export const VenueSection = () => {
             minutes from Northallerton. There is plenty of parking available on
             site.
           </p>
-          <Link
-            href="geo:54.41084,-1.54330?z=17&q=Pepper+Arden+Hall"
-            className="text-blue-600 visited:text-purple-600 hover:text-blue-800"
-          >
-            Pepper Arden Hall
-            <br />
-            Pepper Arden
-            <br />
-            Northallerton
-            <br />
-            North Yorkshire
-            <br />
-            DL7 0JF
-          </Link>
+          <div className="flex mx-auto items-center gap-10">
+            <p className="text-slate-700 text-xl">
+              Pepper Arden Hall
+              <br />
+              Pepper Arden
+              <br />
+              Northallerton
+              <br />
+              North Yorkshire
+              <br />
+              DL7 0JF
+            </p>
 
-          <iframe
-            className="mx-auto mt-5"
-            width="425"
-            height="350"
-            src="https://www.openstreetmap.org/export/embed.html?bbox=-1.553524732589722%2C54.406548985137135%2C-1.5330755710601809%2C54.41512179396099&amp;layer=mapnik"
-          ></iframe>
+            <VenueMap />
+          </div>
         </div>
         <div className="text-center ml-5">
           <h2 className="text-2xl font-bold">Where to stay</h2>

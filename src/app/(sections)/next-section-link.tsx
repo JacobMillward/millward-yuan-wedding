@@ -10,9 +10,9 @@ export const NextSectionLink: React.FC<Props> = ({ target, children }) => {
   return (
     <div className="my-auto ml-auto bg-slate-900/50 py-4 pl-4 rounded-l-md sticky bottom-16 mb-16">
       <Link className="flex mr-4 items-center group" href={`#${target}`}>
-        <div className="relative text-white font-bold transition-all ease-out duration-300">
+        <div className="relative text-white font-bold flex flex-col">
           {children}
-          <span className="absolute inset-x-0 -bottom-1 h-0.5 bg-white transform translate-x-4 scale-x-0 group-hover:translate-x-0 group-hover:scale-x-100 transition-transform ease-out duration-300" />
+          <span className="mx-auto h-0.5 bg-white w-0 group-hover:w-full transition-all ease-out duration-300" />
         </div>
         <div className="ml-4 transition-all bg-white dark:bg-slate-800 p-2 w-10 h-10 ring-1 ring-slate-900/5 dark:ring-slate-200/20 shadow-lg rounded-full flex items-center justify-center">
           <svg

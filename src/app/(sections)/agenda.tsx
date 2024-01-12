@@ -80,7 +80,7 @@ const Agenda = ({ times }: { times: TimeSlot[] }) => {
               {timeSlot.title}
             </div>
 
-            {timeSlot.icon && (
+            {timeSlot.icon ? (
               <div
                 className={`bg-burgundy rounded-full h-20 w-20 flex items-center justify-center mx-auto order-2`}
               >
@@ -91,15 +91,13 @@ const Agenda = ({ times }: { times: TimeSlot[] }) => {
                   height={48}
                 />
               </div>
+            ) : (
+              <div className="mx-auto order-2"></div>
             )}
 
             <div
               className={`font-extrabold text-xl sm:text-2xl text-amber-800 ${
-                !timeSlot.icon
-                  ? "col-start-3"
-                  : index % 2 === 0
-                  ? "text-left order-3"
-                  : "text-right order-1"
+                index % 2 === 0 ? "text-left order-3" : "text-right order-1"
               } flex-grow`}
             >
               {timeSlot.time}

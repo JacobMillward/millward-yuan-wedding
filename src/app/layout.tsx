@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import { Satisfy, Josefin_Slab } from "next/font/google";
 import "./globals.scss";
 
-export const satisfy = Satisfy({
+const satisfy = Satisfy({
   weight: "400",
   subsets: ["latin"],
   variable: "--font-satisfy",

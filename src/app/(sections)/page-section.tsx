@@ -8,7 +8,7 @@ export enum SectionBackground {
 
 type Props = {
   background?: SectionBackground;
-  image?: string;
+  image?: StaticImageData | string;
   children: React.ReactNode;
   [x: string]: any;
 };
@@ -22,13 +22,21 @@ export const PageSection: React.FC<Props> = ({
 }) => {
   return (
     <section
-      className={`min-h-screen w-full ${background} bg-cover bg-center flex flex-col`}
-      style={{
-        backgroundImage: image && `url(${image})`,
-      }}
+      className={`relative min-h-screen w-full ${background} bg-cover bg-center flex flex-col`}
       {...props}
     >
-      <div className={`flex flex-col w-full grow ${className}`}>{children}</div>
+      {image && (
+        <Image
+          src={image}
+          alt=""
+          layout="fill"
+          objectFit="cover"
+          className="z-0"
+        />
+      )}
+      <div className={`z-10 flex flex-col w-full grow ${className}`}>
+        {children}
+      </div>
     </section>
   );
 };

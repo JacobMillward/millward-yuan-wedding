@@ -119,10 +119,19 @@ export const AgendaSection = () => {
       className="text-slate-900 items-center"
     >
       <h1 className="text-4xl font-bold mt-20">Agenda</h1>
-      <p className="m-5 mx-20 text-lg">
+      <p className="mt-5 mx-20 text-lg">
         We&apos;re currently still finalising the agenda for the day, but
         here&apos;s a rough idea of what to expect:
       </p>
+      <p className="mb-3 mx-20 text-lg">
+        With the ceremony starting at 12:30pm,{" "}
+        <span className="font-extrabold">
+          please arrive at the venue for no later than 12pm.
+        </span>{" "}
+        We&apos;ll be serving drinks and canapés after the ceremony, followed by
+        the wedding breakfast, speeches, and evening reception.
+      </p>
+
       <Agenda times={times} />
 
       <NextSectionLink target="location">

@@ -14,28 +14,25 @@ Marker.prototype.options.icon = icon({
   shadowAnchor: [12, 41],
 });
 
-const venueLocation = {
-  center: [54.41147, -1.5445] as [number, number],
-  zoom: 10,
-};
-
-export const VenueMap: FC<{
+export const LeafletMap: FC<{
   className?: string;
-}> = ({ className }) => {
+  center: [number, number];
+  zoom?: number;
+}> = ({ className, center, zoom = 1 }) => {
   return (
     <MapContainer
       className={`h-[300px] w-[300px] lg:h-[500px] lg:w-[500px] relative ${className}`}
       maxZoom={18}
-      zoom={venueLocation.zoom}
-      center={venueLocation.center}
+      zoom={zoom}
+      center={center}
     >
       <TileLayer
         attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors &copy; <a href="https://carto.com/attributions">CARTO</a>'
         url="https://{s}.basemaps.cartocdn.com/rastertiles/voyager/{z}/{x}/{y}{r}.png"
       />
-      <MapMarker position={venueLocation.center} />
+      <MapMarker position={center} />
     </MapContainer>
   );
 };
 
-export default VenueMap;
+export default LeafletMap;

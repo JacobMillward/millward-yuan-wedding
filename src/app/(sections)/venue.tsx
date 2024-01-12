@@ -4,8 +4,7 @@ import { PageSection } from "./page-section";
 import { Link } from "../link";
 
 import dynamic from "next/dynamic";
-
-export const LazyMap = dynamic(() => import("./map"), { ssr: false });
+export const VenueMap = dynamic(() => import("./VenueMap"), { ssr: false });
 
 export const VenueSection = () => {
   return (
@@ -30,19 +29,7 @@ export const VenueSection = () => {
             site.
           </p>
           <div className="flex flex-col lg:flex-row mx-auto items-center gap-10">
-            <p className="text-slate-700 text-xl">
-              Pepper Arden Hall
-              <br />
-              Pepper Arden
-              <br />
-              Northallerton
-              <br />
-              North Yorkshire
-              <br />
-              DL7 0JF
-            </p>
-
-            <LazyMap />
+            <VenueMap />
           </div>
         </div>
         <div className="flex flex-col items-center text-center p-5">

@@ -22,7 +22,7 @@ export const PageSection: React.FC<Props> = ({
 }) => {
   return (
     <section
-      className={`relative min-h-screen w-full ${background} bg-cover bg-center flex flex-col`}
+      className={`relative w-full ${background} bg-cover bg-center flex flex-col`}
       {...props}
     >
       {image && (

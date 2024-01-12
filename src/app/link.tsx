@@ -4,9 +4,10 @@ import NextJsLink from "next/link";
 export const Link: FC<{
   children?: React.ReactNode;
   href: string;
-}> = ({ href, children }) => (
+  className?: string;
+}> = ({ href, children, className = "" }) => (
   <NextJsLink
-    className="text-blue-600 visited:text-purple-600 hover:text-blue-800 hover:underline"
+    className={`text-blue-600 visited:text-purple-600 hover:text-blue-800 hover:underline ${className}}`}
     href={href}
     referrerPolicy="no-referrer"
     target="_blank"

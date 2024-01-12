@@ -24,7 +24,7 @@ export const VenueMap: FC<{
 }> = ({ className }) => {
   return (
     <MapContainer
-      className={`h-[500px] w-[500px] relative ${className}`}
+      className={`h-[300px] w-[300px] lg:h-[500px] lg:w-[500px] relative ${className}`}
       maxZoom={18}
       zoom={venueLocation.zoom}
       center={venueLocation.center}

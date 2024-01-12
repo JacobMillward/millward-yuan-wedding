@@ -1,43 +1,133 @@
 import React from "react";
+import Image from "next/image";
+import { PageSection, SectionBackground } from "./page-section";
+import { NextSectionLink } from "./next-section-link";
+
+type TimeSlot = {
+  time: string;
+  title: string;
+  icon?: string;
+  iconAlt?: string;
+};
+
+const times: TimeSlot[] = [
+  {
+    time: "12:30pm",
+    title: "Ceremony",
+    icon: "/icons/ceremony.svg",
+    iconAlt: "Two heart symbols intertwined",
+  },
+  {
+    time: "TBD",
+    title: "Post-ceremony drinks and canapés",
+    icon: "/icons/drinks.svg",
+    iconAlt: "Champagne bottle",
+  },
+  {
+    time: "TBD",
+    title: "Wedding Breakfast",
+    icon: "/icons/dinner.svg",
+    iconAlt: "Domed presentation plate",
+  },
+  {
+    time: "TBD",
+    title: "Speeches",
+    icon: "/icons/speeches.svg",
+    iconAlt: "Heart symbol with waves radiating from it",
+  },
+  {
+    time: "TBD",
+    title: "Small break",
+  },
+  {
+    time: "TBD",
+    icon: "/icons/music.svg",
+    iconAlt: "Musical note with hearts around it",
+    title: "Evening reception",
+  },
+  {
+    time: "TBD",
+    title: "Evening Food",
+    icon: "/icons/supper.svg",
+    iconAlt: "Mug with a heart symbol on it",
+  },
+  {
+    time: "Late",
+    title: "Evening ends",
+    icon: "/icons/sleep.svg",
+    iconAlt: "Thought bubble with Zzzs in it",
+  },
+];
+
+const Agenda = ({ times }: { times: TimeSlot[] }) => {
+  return (
+    <div className="relative m-8">
+      <div
+        className="border-r-8 border-burgundy absolute h-full top-0 z-0"
+        style={{ left: "calc(50% - 4px)" }}
+      ></div>
+      <ul className="relative list-none m-0 p-0 z-10 flex flex-col justify-between">
+        {times.map((timeSlot, index) => (
+          <li
+            key={timeSlot.time}
+            className="grid grid-cols-3 items-center justify-center peer peer-first:mt-16"
+          >
+            <div
+              className={`font-bold text-3xl text-slate-700 ${
+                index % 2 === 0 ? "text-right order-1" : "text-left order-3"
+              }`}
+            >
+              {timeSlot.title}
+            </div>
+
+            {timeSlot.icon && (
+              <div
+                className={`bg-burgundy rounded-full h-20 w-20 flex items-center justify-center mx-auto order-2`}
+              >
+                <Image
+                  src={timeSlot.icon}
+                  alt={timeSlot.iconAlt!}
+                  width={48}
+                  height={48}
+                />
+              </div>
+            )}
+
+            <div
+              className={`font-extrabold text-2xl text-amber-800 ${
+                !timeSlot.icon
+                  ? "col-start-3"
+                  : index % 2 === 0
+                  ? "text-left order-3"
+                  : "text-right order-1"
+              } flex-grow`}
+            >
+              {timeSlot.time}
+            </div>
+          </li>
+        ))}
+      </ul>
+    </div>
+  );
+};
 
 export const AgendaSection = () => {
   return (
-    <div className="flex flex-col items-center text-slate-900 p-20">
-      <h1 className="text-4xl font-bold">Agenda</h1>
+    <PageSection
+      background={SectionBackground.Blue}
+      id="agenda"
+      className="text-slate-900 items-center"
+    >
+      <h1 className="text-4xl font-bold mt-20">Agenda</h1>
       <p className="mt-5">
         We&apos;re currently still finalising the agenda for the day, but
         here&apos;s a rough idea of what to expect:
       </p>
-      <ul className="mt-5 text-center sm:text-3xl">
-        <li className="mb-2 sm:mb-4">
-          <span className="font-bold">12:30pm</span> - Ceremony
-        </li>
-        <li className="mb-2  sm:mb-4">
-          <span className="font-bold">TBD</span> - Reception Drinks and Canapés
-        </li>
-        <li className="mb-2  sm:mb-4">
-          <span className="font-bold">TBD</span> - Wedding Breakfast
-        </li>
-        <li className="mb-2  sm:mb-4">
-          <span className="font-bold">TBD</span> - Speeches
-        </li>
-        <li className="mb-2  sm:mb-4">
-          <span className="font-bold">TBD</span> - Small break
-        </li>
-        <li className="mb-2  sm:mb-4">
-          <span className="font-bold">TBD</span> - Evening reception start
-        </li>
-        <li className="mb-2  sm:mb-4">
-          <span className="font-bold">TBD</span> - Cake Cutting
-        </li>
-        <li className="mb-2  sm:mb-4">
-          <span className="font-bold">TBD</span> - First Dance
-        </li>
-        <li className="mb-2  sm:mb-4">
-          <span className="font-bold">TBD</span> - Evening Food
-        </li>
-        <li>Evening ends late!</li>
-      </ul>
-    </div>
+      <Agenda times={times} />
+
+      <NextSectionLink target="location">
+        Where&rsquo;s it all happening?
+      </NextSectionLink>
+    </PageSection>
   );
 };

@@ -1,6 +1,6 @@
-import { PageSection, SectionBackground } from "./page-section";
+import { PageSection, SectionBackground } from "./(sections)/page-section";
 import { ScrollToTopButton } from "./scroll-to-top-link";
-import { NextSectionLink } from "./next-section-link";
+import { NextSectionLink } from "./(sections)/next-section-link";
 import Navbar from "./navbar";
 import { TopSection } from "./(sections)/top-section";
 import { AgendaSection } from "./(sections)/agenda";
@@ -17,24 +17,11 @@ export default function Home() {
           { title: "RSVP", target: "#rsvp" },
         ]}
       />
-      <PageSection id="top" image="/images/1.jpg">
-        <TopSection />
 
-        <NextSectionLink target="agenda">What&apos;s the plan?</NextSectionLink>
-      </PageSection>
-      <PageSection background={SectionBackground.Blue} id="agenda">
-        <AgendaSection />
-        <NextSectionLink target="location">
-          Where is it happening?
-        </NextSectionLink>
-      </PageSection>
-      <PageSection id="location">
-        <VenueSection />
-        <NextSectionLink target="rsvp">RSVP</NextSectionLink>
-      </PageSection>
-      <PageSection background={SectionBackground.Blue} id="rsvp">
-        <RsvpSection />
-      </PageSection>
+      <TopSection />
+      <AgendaSection />
+      <VenueSection />
+      <RsvpSection />
 
       <ScrollToTopButton />
     </main>

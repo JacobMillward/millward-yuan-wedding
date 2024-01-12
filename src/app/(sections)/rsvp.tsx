@@ -1,5 +1,10 @@
 import React from "react";
+import { PageSection, SectionBackground } from "./page-section";
 
 export const RsvpSection = () => {
-  return <div>RsvpSection</div>;
+  return (
+    <PageSection id="rsvp" background={SectionBackground.Blue}>
+      <h1>RSVP</h1>
+    </PageSection>
+  );
 };

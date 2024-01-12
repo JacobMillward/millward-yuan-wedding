@@ -17,17 +17,18 @@ export const PageSection: React.FC<Props> = ({
   children,
   background = SectionBackground.White,
   image,
+  className = "",
   ...props
 }) => {
   return (
     <section
-      className={`h-screen w-full ${background} bg-cover bg-center`}
+      className={`min-h-screen w-full ${background} bg-cover bg-center flex flex-col`}
       style={{
         backgroundImage: image && `url(${image})`,
       }}
       {...props}
     >
-      <div className="flex flex-col h-full w-full">{children}</div>
+      <div className={`flex flex-col w-full grow ${className}`}>{children}</div>
     </section>
   );
 };

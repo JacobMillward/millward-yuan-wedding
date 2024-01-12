@@ -16,3 +16,10 @@ h5,
 h6 {
   font-family: var(--font-satisfy);
 }
+
+.leaflet-bottom,
+.leaflet-control,
+.leaflet-pane,
+.leaflet-top {
+  z-index: 0 !important;
+}

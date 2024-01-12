@@ -73,7 +73,7 @@ const Agenda = ({ times }: { times: TimeSlot[] }) => {
             className="grid grid-cols-3 items-center justify-center peer peer-first:mt-16"
           >
             <div
-              className={`font-bold text-3xl text-slate-700 ${
+              className={`font-bold text-2xl sm:text-3xl text-slate-700 ${
                 index % 2 === 0 ? "text-right order-1" : "text-left order-3"
               }`}
             >
@@ -94,7 +94,7 @@ const Agenda = ({ times }: { times: TimeSlot[] }) => {
             )}
 
             <div
-              className={`font-extrabold text-2xl text-amber-800 ${
+              className={`font-extrabold text-xl sm:text-2xl text-amber-800 ${
                 !timeSlot.icon
                   ? "col-start-3"
                   : index % 2 === 0
@@ -119,7 +119,7 @@ export const AgendaSection = () => {
       className="text-slate-900 items-center"
     >
       <h1 className="text-4xl font-bold mt-20">Agenda</h1>
-      <p className="mt-5">
+      <p className="m-5 mx-20 text-lg">
         We&apos;re currently still finalising the agenda for the day, but
         here&apos;s a rough idea of what to expect:
       </p>

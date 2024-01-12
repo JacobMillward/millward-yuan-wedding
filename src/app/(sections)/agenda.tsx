@@ -38,6 +38,8 @@ const times: TimeSlot[] = [
   {
     time: "TBD",
     title: "Small break",
+    icon: "/icons/clock.svg",
+    iconAlt: "Clock face with hands pointing to 12 and 4",
   },
   {
     time: "TBD",

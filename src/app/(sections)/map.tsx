@@ -15,7 +15,7 @@ Marker.prototype.options.icon = icon({
 });
 
 const venueLocation = {
-  center: [54.41147, -1.54467] as [number, number],
+  center: [54.41147, -1.5445] as [number, number],
   zoom: 10,
 };
 

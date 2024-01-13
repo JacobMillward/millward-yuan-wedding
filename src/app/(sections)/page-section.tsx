@@ -1,4 +1,5 @@
-import Image, { StaticImageData } from "next/image";
+import ExportedImage from "next-image-export-optimizer";
+import { type StaticImageData } from "next/image";
 import React from "react";
 
 export enum SectionBackground {
@@ -26,7 +27,7 @@ export const PageSection: React.FC<Props> = ({
       {...props}
     >
       {image && (
-        <Image
+        <ExportedImage
           src={image}
           alt="Background image"
           className="z-0"

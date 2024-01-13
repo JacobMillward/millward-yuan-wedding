@@ -1,7 +1,7 @@
 import React from "react";
-import Image from "next/image";
 import { PageSection, SectionBackground } from "./page-section";
 import { NextSectionLink } from "./next-section-link";
+import ExportedImage from "next-image-export-optimizer";
 
 type TimeSlot = {
   time: string;
@@ -86,7 +86,7 @@ const Agenda = ({ times }: { times: TimeSlot[] }) => {
               <div
                 className={`bg-burgundy rounded-full h-20 w-20 flex items-center group-hover:animate-wiggle justify-center mx-auto order-2 drop-shadow-xl`}
               >
-                <Image
+                <ExportedImage
                   src={timeSlot.icon}
                   alt={timeSlot.iconAlt!}
                   width={48}

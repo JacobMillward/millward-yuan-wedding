@@ -4,11 +4,18 @@ import React from "react";
 type Props = {
   target: string;
   children: React.ReactNode;
+  className?: string;
 };
 
-export const NextSectionLink: React.FC<Props> = ({ target, children }) => {
+export const NextSectionLink: React.FC<Props> = ({
+  target,
+  children,
+  className = "",
+}) => {
   return (
-    <div className="bg-slate-900/70 py-4 pl-4 rounded-l-3xl sticky bottom-16 my-16 ml-auto">
+    <div
+      className={`bg-slate-900/70 py-4 pl-4 rounded-l-3xl sticky bottom-16 my-16 ml-auto -mr-10 ${className}`}
+    >
       <Link className="flex mr-4 items-center group" href={`#${target}`}>
         <div className="relative text-white font-bold flex flex-col mt-0.5">
           {children}

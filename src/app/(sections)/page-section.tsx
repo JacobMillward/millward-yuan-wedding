@@ -37,7 +37,7 @@ export const PageSection: React.FC<Props> = ({
           }}
         />
       )}
-      <div className={`z-10 flex flex-col w-full grow ${className}`}>
+      <div className={`z-10 flex flex-col grow mx-10 ${className}`}>
         {children}
       </div>
     </section>

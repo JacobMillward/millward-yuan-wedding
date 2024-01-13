@@ -63,7 +63,7 @@ const times: TimeSlot[] = [
 
 const Agenda = ({ times }: { times: TimeSlot[] }) => {
   return (
-    <div className="relative m-8">
+    <div className="relative">
       <div
         className="border-r-8 border-burgundy absolute h-full top-0"
         style={{ left: "calc(50% - 4px)" }}
@@ -84,7 +84,7 @@ const Agenda = ({ times }: { times: TimeSlot[] }) => {
 
             {timeSlot.icon ? (
               <div
-                className={`bg-burgundy rounded-full h-20 w-20 flex items-center group-hover:animate-wiggle justify-center mx-auto order-2 drop-shadow-xl`}
+                className={`bg-burgundy rounded-full h-14 w-14 p-3 sm:h-20 sm:w-20 flex items-center group-hover:animate-wiggle justify-center mx-auto order-2 drop-shadow-xl`}
               >
                 <ExportedImage
                   src={timeSlot.icon}
@@ -118,8 +118,8 @@ export const AgendaSection = () => {
       id="agenda"
       className="text-slate-900 items-center"
     >
-      <h1 className="text-4xl font-bold mt-20">Agenda</h1>
-      <div className="mt-5 mx-20 max-w-[960px] text-lg lg:text-xl text-center">
+      <h1 className="text-4xl font-bold my-10">Agenda</h1>
+      <div className="max-w-[900px] text-lg lg:text-xl text-center">
         <p>
           With the ceremony starting at 12:30pm,{" "}
           <span className="font-extrabold">
@@ -128,7 +128,7 @@ export const AgendaSection = () => {
           We&apos;ll be serving drinks and canapés after the ceremony, followed
           by the wedding breakfast, speeches, and evening reception.
         </p>
-        <p className="mt-3">
+        <p className="mt-3 mb-10">
           We&apos;re currently still finalising the agenda for the day, but
           here&apos;s a rough idea of what to expect:
         </p>

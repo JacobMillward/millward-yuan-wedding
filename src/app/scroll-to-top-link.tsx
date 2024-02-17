@@ -22,14 +22,19 @@ export const ScrollToTopButton: React.FC = () => {
 
   return (
     <div
-      className={`fixed flex flex-col z-50 group bottom-4 left-1/2 transform -translate-x-1/2 bg-slate-900/50 text-white px-4 pt-2.5 pb-2 rounded-full transition-opacity duration-300 ${
+      className={`fixed flex flex-col z-50 group bottom-4 left-1/2 transform -translate-x-1/2 bg-slate-900/50 text-white px-4 pt-2.5 pb-2.5 rounded-full transition-opacity duration-300 cursor-pointer ${
         isVisible
           ? "opacity-100 pointer-events-auto"
           : "opacity-0 pointer-events-none"
       }`}
     >
-      <Link href="#top">Back to top</Link>
-      <span className="mx-auto h-0.5 bg-white w-0 group-hover:w-full transition-all ease-out duration-300" />
+      <Link
+        href="#top"
+        className="group-hover:text-gold transition-colors ease-out duration-300"
+      >
+        Back to top
+      </Link>
+      <span className="mx-auto h-0.5 bg-white w-0 group-hover:w-full group-hover:bg-gold transition-all ease-out duration-300" />
     </div>
   );
 };

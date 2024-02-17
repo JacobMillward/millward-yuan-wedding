@@ -8,12 +8,8 @@ export const TopSection = () => {
     <PageSection id="top" image={BackgroundImage} className="min-h-screen">
       <div className="m-auto">
         <div className="flex flex-col m-auto items-center bg-slate-900/70 rounded-tl-3xl rounded-br-3xl p-10 text-white text-center">
-          <h1 className="text-caramel text-4xl font-bold">
-            Jacob &amp; Jianan
-          </h1>
-          <h2 className="text-caramel text-2xl font-bold">
-            are getting married!
-          </h2>
+          <h1 className="text-gold text-4xl font-bold">Jacob &amp; Jianan</h1>
+          <h2 className="text-gold text-2xl font-bold">are getting married!</h2>
 
           <p className="mt-3 text-lg font-bold">
             Saturday, November 16th, 2024 · 12:30pm

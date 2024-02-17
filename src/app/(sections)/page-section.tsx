@@ -4,7 +4,7 @@ import React from "react";
 
 export enum SectionBackground {
   White = "bg-white",
-  Khaki = "bg-khaki",
+  PaleGreen = "bg-palegreen",
 }
 
 type Props = {

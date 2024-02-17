@@ -14,7 +14,7 @@ const Navbar: React.FC<NavbarProps> = ({ navLinks }) => {
   return (
     <nav className="flex justify-between items-center px-4 sm:px-6 lg:px-8 h-16 bg-burgundy">
       <div className="flex-shrink-0">
-        <h1 className="text-caramel text-2xl font-bold">J & J</h1>
+        <h1 className="text-gold text-2xl font-bold">J & J</h1>
       </div>
 
       <div
@@ -27,7 +27,7 @@ const Navbar: React.FC<NavbarProps> = ({ navLinks }) => {
           <Link
             key={link.target}
             href={link.target}
-            className="ml-4 text-white text-xl hover:text-gray-300 transition-colors ease-out duration-300"
+            className="ml-4 text-white text-xl hover:text-gold transition-colors ease-out duration-300"
           >
             {link.title}
           </Link>

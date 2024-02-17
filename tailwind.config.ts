@@ -9,9 +9,9 @@ const config: Config = {
   theme: {
     extend: {
       colors: {
-        burgundy: "#691126",
-        khaki: "#c2a791",
-        caramel: "#f9b988",
+        burgundy: "#35461f",
+        palegreen: "#dadcc8",
+        gold: "#bb9f5d",
       },
       fontFamily: {
         serif: ["var(--font-satsify)"],

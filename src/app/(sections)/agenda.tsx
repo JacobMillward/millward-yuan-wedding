@@ -114,7 +114,7 @@ const Agenda = ({ times }: { times: TimeSlot[] }) => {
 export const AgendaSection = () => {
   return (
     <PageSection
-      background={SectionBackground.Khaki}
+      background={SectionBackground.PaleGreen}
       id="agenda"
       className="text-slate-900 items-center"
     >

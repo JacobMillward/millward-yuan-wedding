@@ -1,12 +1,6 @@
 import type { Metadata } from "next";
-import { Satisfy, EB_Garamond } from "next/font/google";
+import { EB_Garamond } from "next/font/google";
 import "./globals.scss";
-
-export const satisfy = Satisfy({
-  weight: "400",
-  subsets: ["latin"],
-  variable: "--font-satisfy",
-});
 
 const garamond = EB_Garamond({
   weight: "400",

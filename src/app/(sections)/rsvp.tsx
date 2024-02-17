@@ -21,7 +21,7 @@ export const RsvpSection = () => {
       >
         RSVP is not yet open
       </button>
-      <p className="max-w-[900px] text-lg lg:text-xl">
+      <p className="max-w-[900px] text-lg lg:text-xl mb-5">
         If you have any questions about the wedding, please contact us at{" "}
         <Link
           href="mailto:wedding@millward-yuan.family"
@@ -30,7 +30,6 @@ export const RsvpSection = () => {
           wedding@millward-yuan.family
         </Link>
       </p>
-      .
     </PageSection>
   );
 };

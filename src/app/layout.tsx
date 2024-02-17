@@ -1,17 +1,17 @@
 import type { Metadata } from "next";
-import { Satisfy, Josefin_Slab } from "next/font/google";
+import { Satisfy, EB_Garamond } from "next/font/google";
 import "./globals.scss";
 
-const satisfy = Satisfy({
+export const satisfy = Satisfy({
   weight: "400",
   subsets: ["latin"],
   variable: "--font-satisfy",
 });
 
-const josefin = Josefin_Slab({
+const garamond = EB_Garamond({
   weight: "400",
   subsets: ["latin"],
-  variable: "--font-josefin",
+  variable: "--font-garamond",
 });
 
 export const metadata: Metadata = {
@@ -26,7 +26,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="en" className={`${josefin.className} ${satisfy.variable}`}>
+    <html lang="en" className={`${garamond.className} ${satisfy.variable}`}>
       <body>{children}</body>
     </html>
   );

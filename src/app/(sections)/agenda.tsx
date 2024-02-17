@@ -2,6 +2,7 @@ import React from "react";
 import { PageSection, SectionBackground } from "./page-section";
 import { NextSectionLink } from "./next-section-link";
 import ExportedImage from "next-image-export-optimizer";
+import { satisfy } from "../layout";
 
 type TimeSlot = {
   time: string;
@@ -63,7 +64,7 @@ const times: TimeSlot[] = [
 
 const Agenda = ({ times }: { times: TimeSlot[] }) => {
   return (
-    <div className="relative">
+    <div className="relative max-w-prose">
       <div
         className="border-r-8 border-burgundy absolute h-full top-0"
         style={{ left: "calc(50% - 4px)" }}
@@ -75,7 +76,9 @@ const Agenda = ({ times }: { times: TimeSlot[] }) => {
             className="grid grid-cols-3 items-center justify-center group peer peer-first:mt-16"
           >
             <div
-              className={`font-bold text-2xl sm:text-3xl text-slate-700 ${
+              className={`font-bold text-slate-600 ${
+                satisfy.className
+              } text-2xl sm:text-3xl ${
                 index % 2 === 0 ? "text-right order-1" : "text-left order-3"
               }`}
             >
@@ -98,7 +101,9 @@ const Agenda = ({ times }: { times: TimeSlot[] }) => {
             )}
 
             <div
-              className={`font-extrabold text-xl sm:text-2xl text-amber-800 ${
+              className={`font-extrabold ${
+                satisfy.className
+              } text-xl sm:text-2xl text-amber-800 ${
                 index % 2 === 0 ? "text-left order-3" : "text-right order-1"
               } flex-grow`}
             >

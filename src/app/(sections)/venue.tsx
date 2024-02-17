@@ -11,7 +11,7 @@ export const VenueSection = () => {
     <PageSection id="location" className="items-center text-center">
       <h1 className="text-4xl font-bold my-10">Venue & Accomodation</h1>
 
-      <p className="max-w-[900px] text-lg">
+      <p className="max-w-[900px] text-lg lg:text-xl">
         The enchanting backdrop for our wedding will be the stunning{" "}
         <Link href="https://pepperardenhall.com/">Pepper Arden Hall</Link>, a
         magnificent 18th-century manor house nestled in the heart of North
@@ -23,18 +23,18 @@ export const VenueSection = () => {
       <div className="flex flex-col gap-5 lg:flex-row pt-10 lg:pt-0 lg:mt-20">
         <div className="flex flex-col border-burgundy border-b-2 lg:border-r-2 lg:border-b-0 lg:pr-5 pb-5 lg:pb-0">
           <h2 className="text-2xl font-bold mb-10">How to find it</h2>
-          <p className="max-w-[900px] text-lg mb-5 lg:mb-0">
+          <p className="max-w-[900px] text-lg lg:text-xl mb-5 lg:mb-0">
             Pepper Arden Hall is about 20 minutes from Darlington, and 20
             minutes from Northallerton. There is plenty of parking available on
             site.
           </p>
-          <div className="flex flex-col lg:flex-row mx-auto items-center gap-10">
+          <div className="flex flex-col lg:flex-row mt-5 mx-auto items-center gap-10">
             <VenueMap />
           </div>
         </div>
         <div className="flex flex-col items-center">
           <h2 className="text-2xl font-bold mb-10">Where to stay</h2>
-          <p className="max-w-[900px] text-lg">
+          <p className="max-w-[900px] text-lg lg:text-xl">
             If you aren&apos;t already staying with us at the venue, there are
             plenty of hotels and B&Bs in the surrounding area. The following
             accommodation options are all nearby, at a range of price points:

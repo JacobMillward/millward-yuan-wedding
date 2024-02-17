@@ -1,12 +1,6 @@
 import type { Metadata } from "next";
-import { EB_Garamond } from "next/font/google";
 import "./globals.scss";
-
-const garamond = EB_Garamond({
-  weight: "400",
-  subsets: ["latin"],
-  variable: "--font-garamond",
-});
+import { garamond, satisfy } from "./styles/fonts";
 
 export const metadata: Metadata = {
   title: "Jacob & Jianan are getting married!",

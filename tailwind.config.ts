@@ -9,8 +9,8 @@ const config: Config = {
   theme: {
     extend: {
       colors: {
-        burgundy: "#35461f",
-        palegreen: "#dadcc8",
+        burgundy: "#70482b",
+        palegreen: "#f9ebc7",
         gold: "#bb9f5d",
       },
       fontFamily: {

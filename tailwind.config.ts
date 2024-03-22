@@ -9,7 +9,7 @@ const config: Config = {
   theme: {
     extend: {
       colors: {
-        burgundy: "#614134",
+        burgundy: "#753f31",
         palegreen: "#f9ebc7",
         gold: "#bb9f5d",
       },

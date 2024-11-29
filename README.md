@@ -2,7 +2,7 @@
 
 [![Pages Deploy](https://github.com/JacobMillward/millward-yuan-wedding/actions/workflows/deploy-pages.yml/badge.svg)](https://github.com/JacobMillward/millward-yuan-wedding/actions/workflows/deploy-pages.yml)
 
-This is the repo for our [wedding website](https://wedding.millward-yuan.family), which will take place on 16th November 2024.
+This is the repo for our [wedding website](https://wedding.millward-yuan.family).
 
 ## Building
 

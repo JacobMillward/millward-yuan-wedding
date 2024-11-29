@@ -1,11 +1,11 @@
 import type { Metadata } from "next";
-import "./globals.scss";
-import { garamond, satisfy } from "./styles/fonts";
+import "../globals.scss";
+import { garamond, satisfy } from "../styles/fonts";
 
 export const metadata: Metadata = {
-  title: "Jianan & Jacob got married!",
+  title: "Jianan & Jacob are getting married!",
   description:
-    "We got married on November 16th, 2024 in Northallerton, UK. Thank you to everyone who attended and celebrated with us!",
+    "Join us for our wedding on November 16th, 2024 in Northallerton, UK.",
 };
 
 export default function RootLayout({

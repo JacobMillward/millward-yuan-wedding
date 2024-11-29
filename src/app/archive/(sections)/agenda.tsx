@@ -2,7 +2,7 @@ import React from "react";
 import { PageSection, SectionBackground } from "./page-section";
 import { NextSectionLink } from "./next-section-link";
 import ExportedImage from "next-image-export-optimizer";
-import { satisfy } from "../styles/fonts";
+import { satisfy } from "../../styles/fonts";
 
 type TimeSlot = {
   time: string;

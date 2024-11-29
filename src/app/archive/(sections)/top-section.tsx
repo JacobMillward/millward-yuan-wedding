@@ -1,7 +1,7 @@
 import React from "react";
 import { PageSection } from "./page-section";
 import { NextSectionLink } from "./next-section-link";
-import BackgroundImage from "../../../public/images/1.jpg";
+import BackgroundImage from "../../../../public/images/1.jpg";
 
 export const TopSection = () => {
   return (
